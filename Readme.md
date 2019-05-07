@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Сергей Елсаков](https://up.htmlacademy.ru/htmlcss/25/user/580621).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Половков](https://htmlacademy.ru/profile/psinegmatic).
 
 ---
 
