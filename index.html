@@ -86,10 +86,29 @@
     <section class="search-hotel">
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
       <b>Заинтересовались?</b>
-      <p class="thin-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+      <p class="appointment-info thin-text">
+        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
       <a href="#" class="activate-form-btn">Поиск гостиницы в Седоне</a>
-      <!--Здесь будет форма поиска отелей-->
+      <form class="appointment-form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="appointment-item">
+          <label for="appointment-arrival-date">Дата заезда:</label>
+          <input id="appointment-arrival-date" type="date" name="arrival-date" value="">
+        </p>
+        <p class="appointment-item">
+          <label for="appointment-departure-date">Дата выезда:</label>
+          <input id="appointment-departure-date" type="date" name="departure-date" value="">
+        </p>
+        <p class="appointment-item">
+          <label for="number-adults">Взрослые:</label>
+          <input id="number-adults" type="number" name="adults" value="0">
+        </p>
+        <p class="appointment-item">
+          <label for="number-children">Дети:</label>
+          <input id="number-children" type="number" name="children" value="0">
+        </p>
+        <button class="button-form" type="submit">Найти</button>
+      </form>
     </section>
     <section class="map">
       <h4 class="visually-hidden">Карта Седоны</h4>
@@ -100,9 +119,9 @@
     <b>#VISITSEDONA</b>
     <div class="footer-social">
       <ul>
-        <li><a class="social-button twitter" href="#twitter">Twitter</a></li>
-        <li><a class="social-button facebook" href="#facebook">Facebook</a></li>
-        <li><a class="social-button youtube" href="#youtube">Youtube</a></li>
+        <li><a class="social-button twitter" href="#twitter" aria-label="Седона в Twitter"></a></li>
+        <li><a class="social-button facebook" href="#facebook" aria-label="Седона на Facebook"></a></li>
+        <li><a class="social-button youtube" href="#youtube" aria-label="Седона в Youtube"></a></li>
       </ul>
     </div>
     <p class="footer-copyright">

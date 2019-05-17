@@ -24,7 +24,78 @@
     <h1 class="page-title visually-hidden">Гостиницы в Седоне</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
-      <!--Здесь будет форма-->
+      <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" name="swimming"
+                id="filter-swimming" checked>
+              <label for="filter-swimming">Бассейн</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" id="filter-parking"
+                name="parking">
+              <label for="filter-parking">Парковка</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" id="filter-wi-fi"
+                name="wi-fi">
+              <label for="filter-wi-fi">Wi-fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" name="hotel"
+                id="filter-hotel" checked>
+              <label for="filter-hotel">Гостиница</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" name="motel"
+                id="filter-motel" checked>
+              <label for="filter-motel">Мотель</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" name="apartment"
+                id="filter-apartment" checked>
+              <label for="filter-apartment">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <div class="price-control">
+            <label for="filter-min-price">От<input class="min-price" type="text" name="min-price" value="0"
+                id="filter-min-price"></label>
+            <label for="filter-max-price">До<input class="max-price" type="text" name="max-price" value="3000"
+                id="filter-max-price"></label>
+          </div>
+        </fieldset>
+        <button class="button-form" type="submit">Показать</button>
+      </form>
+    </section>
+    <section class="sort">
+      <h2 class="visually-hidden">Сортировка гостиниц</h2>
+      <p class="sort-find">Найдено: 3</p>
+      <p class="sort-title">Сортировка:</p>
+      <ul class="sort by">
+        <li>
+          <a class="active-sort" href="#">По цене</a>
+        </li>
+        <li>
+          <a href="#">По типу</a>
+        </li>
+        <li>
+          <a href="#">По рейтингу</a>
+        </li>
+      </ul>
+      <div class="sort-arrows">
+        <a class="sort-arrow-up" href="#"></a>
+        <a class="sort-arrow-down" href="#"></a>
+      </div>
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Список гостиниц в Седоне</h2>
@@ -120,9 +191,9 @@
     <b>#VISITSEDONA</b>
     <div class="footer-social">
       <ul>
-        <li><a class="social-button" href="#twitter">Twitter</a></li>
-        <li><a class="social-button" href="#facebook">Facebook</a></li>
-        <li><a class="social-button" href="#youtube">Youtube</a></li>
+        <li><a class="social-button twitter" href="#twitter" aria-label="Седона в Twitter"></a></li>
+        <li><a class="social-button facebook" href="#facebook" aria-label="Седона на Facebook"></a></li>
+        <li><a class="social-button youtube" href="#youtube" aria-label="Седона в Youtube"></a></li>
       </ul>
     </div>
     <p class="footer-copyright">
