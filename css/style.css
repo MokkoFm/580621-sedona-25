@@ -387,3 +387,11 @@ a {
   background-color: #503e33;
   color: #928a85;
 }
+
+.item-title:hover h3 {
+  color: #81b3d2;
+}
+
+.item-title:active h3 {
+  color: #cacaca;
+}
