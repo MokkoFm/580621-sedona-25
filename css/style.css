@@ -325,6 +325,8 @@ a {
 
 .catalog-item {
   border: 1px solid #e5e5e5;
+  border-left: none;
+  border-right: none;
 }
 
 .catalog-item:nth-child(2),
