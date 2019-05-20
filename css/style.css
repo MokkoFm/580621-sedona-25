@@ -248,15 +248,15 @@ a {
   line-height: 21px;
 }
 
-.filter-input:hover+label {
+.main-navigation a:hover {
   color: #cadeeb;
 }
 
-.filter-input:focus+label {
+.main-navigation a:focus {
   color: #cacaca;
 }
 
-.filter-input:active+label {
+.main-navigation a:active {
   color: #766357;
 }
 
