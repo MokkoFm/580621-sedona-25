@@ -30,7 +30,7 @@
       <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Инфраструктура:</legend>
-          <ul class="first-filter">
+          <ul>
             <li class="filter-option">
               <input class="filter-input filter-input checkbox" type="checkbox" name="swimming" id="filter-swimming"
                 checked>
@@ -48,7 +48,7 @@
         </fieldset>
         <fieldset>
           <legend>Тип жилья:</legend>
-          <ul class="second-filter">
+          <ul>
             <li class="filter-option">
               <input class="filter-input filter-input checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
               <label for="filter-hotel">Гостиница</label>
@@ -73,7 +73,7 @@
                 id="filter-max-price"></label>
           </div>
         </fieldset>
-        <button class="button-form" type="submit">Показать</button>
+        <button class="button-form-filter" type="submit">Показать</button>
       </form>
     </section>
     <section class="sort">
@@ -82,13 +82,13 @@
       <p class="sort-title">Сортировка:</p>
       <ul class="sort by">
         <li>
-          <a class="active-sort" href="#">По цене</a>
+          <a class="passive-sort" href="#">По цене</a>
         </li>
         <li>
-          <a href="#">По типу</a>
+          <a class="passive-sort" href="#">По типу</a>
         </li>
         <li>
-          <a href="#">По рейтингу</a>
+          <a class="passive-sort" href="#">По рейтингу</a>
         </li>
       </ul>
       <div class="sort-arrows">
@@ -113,8 +113,8 @@
             <span class="catalog-price">От 4000 Р.</span>
           </p>
           <p class="buttons-hotels">
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+            <a class="button-more" href="#">Подробнее</a>
+            <a class="button-book" href="#">Забронировать</a>
           </p>
           <div class="hotel-rate">
             <ul class="hotel-stars">
@@ -142,8 +142,8 @@
             <span class="catalog-price">От 3000 Р.</span>
           </p>
           <p class="buttons-hotels">
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+            <a class="button-more" href="#">Подробнее</a>
+            <a class="button-book" href="#">Забронировать</a>
           </p>
           <div class="hotel-rate">
             <ul class="hotel-stars">
@@ -170,8 +170,8 @@
             <span class="catalog-price">От 2000 Р.</span>
           </p>
           <p class="buttons-hotels">
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+            <a class="button-more" href="#">Подробнее</a>
+            <a class="button-book" href="#">Забронировать</a>
           </p>
           <div class="hotel-rate">
             <ul class="hotel-stars">
@@ -190,9 +190,9 @@
     <b>#VISITSEDONA</b>
     <div class="footer-social">
       <ul>
-        <li><a class="social-button twitter" href="#twitter" aria-label="Седона в Twitter"></a></li>
-        <li><a class="social-button facebook" href="#facebook" aria-label="Седона на Facebook"></a></li>
-        <li><a class="social-button youtube" href="#youtube" aria-label="Седона в Youtube"></a></li>
+        <li><a class="social-button twitter" href="#twitter" aria-label="Седона в Twitter"></a>Твиттер</li>
+        <li><a class="social-button facebook" href="#facebook" aria-label="Седона на Facebook"></a>Фейсбук</li>
+        <li><a class="social-button youtube" href="#youtube" aria-label="Седона в Youtube"></a>Ютуб</li>
       </ul>
     </div>
     <p class="footer-copyright">

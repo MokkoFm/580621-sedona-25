@@ -17,7 +17,7 @@ a {
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
-  font-size: 700;
+  font-weight: 700;
   color: #000000;
   text-align: center;
 
@@ -231,7 +231,148 @@ a {
   margin: -1px;
 }
 
-.first-filter,
-.second-filter {
+.filter ul {
   list-style: none;
+}
+
+.filters {
+  background-color: #436b8e;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter-input:hover+label {
+  color: #cadeeb;
+}
+
+.filter-input:focus+label {
+  color: #cacaca;
+}
+
+.filter-input:active+label {
+  color: #766357;
+}
+
+.filter-input:disabled+label {
+  color: #000000;
+  opacity: 0.5;
+}
+
+.button-form-filter {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.button-form-filter:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+}
+
+.sort-find {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sort-title {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.passive-sort {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+
+  color: #cacaca;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.passive-sort:hover {
+  color: #81b3d2;
+}
+
+.passive-sort:focus {
+  color: #000000;
+  border: none;
+}
+
+.passive-sort:active {
+  color: #81b3d2;
+  border: none;
+}
+
+.sort ul {
+  list-style: none;
+}
+
+.catalog h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.catalog-category,
+.catalog-price {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #cacaca;
+}
+
+.catalog ul {
+  list-style: none;
+}
+
+.rate {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #727272;
+  background-color: #f2f2f2;
+}
+
+.button-more {
+  background-color: #81b3d2;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.button-more:hover {
+  background-color: #669ec0;
+}
+
+.button-more:focus {
+  background-color: #5496bd;
+  color: #85b0cd;
+}
+
+.button-book {
+  background-color: #766357;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.button-book:hover {
+  background-color: #604e43;
+}
+
+.button-book:focus {
+  background-color: #503e33;
+  color: #928a85;
 }
