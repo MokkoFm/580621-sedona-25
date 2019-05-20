@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,40 +30,36 @@
       <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Инфраструктура:</legend>
-          <ul>
+          <ul class="first-filter">
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" name="swimming"
-                id="filter-swimming" checked>
+              <input class="filter-input filter-input checkbox" type="checkbox" name="swimming" id="filter-swimming"
+                checked>
               <label for="filter-swimming">Бассейн</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" id="filter-parking"
-                name="parking">
+              <input class="filter-input filter-input checkbox" type="checkbox" id="filter-parking" name="parking">
               <label for="filter-parking">Парковка</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" id="filter-wi-fi"
-                name="wi-fi">
+              <input class="filter-input filter-input checkbox" type="checkbox" id="filter-wi-fi" name="wi-fi">
               <label for="filter-wi-fi">Wi-fi</label>
             </li>
           </ul>
         </fieldset>
         <fieldset>
           <legend>Тип жилья:</legend>
-          <ul>
+          <ul class="second-filter">
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" name="hotel"
-                id="filter-hotel" checked>
+              <input class="filter-input filter-input checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
               <label for="filter-hotel">Гостиница</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" name="motel"
-                id="filter-motel" checked>
+              <input class="filter-input filter-input checkbox" type="checkbox" name="motel" id="filter-motel" checked>
               <label for="filter-motel">Мотель</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" name="apartment"
-                id="filter-apartment" checked>
+              <input class="filter-input filter-input checkbox" type="checkbox" name="apartment" id="filter-apartment"
+                checked>
               <label for="filter-apartment">Апартаменты</label>
             </li>
           </ul>

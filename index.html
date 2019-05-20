@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,8 +32,8 @@
     <section class="features">
       <div class="features-text">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
-        <p class="bold-p">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="thin-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <p class="features-text-main">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="features-text-p thin-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
       <ul class="features-list">
         <li class="feature-item">
@@ -64,22 +67,21 @@
           <span class="thin-text">№5</span>
           <p class="thin-text">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
-      </ul>
-    </section>
-    <section class="infrastructure">
-      <h2 class="visually-hidden">Инфраструктура Седоны</h2>
-      <ul class="infrastructure-list">
-        <li class="infrastructure-item">
-          <h3>Жилье</h3>
-          <p class="thin-text">Рекомендуем пожить в настоящем отеле, всё как в кино!</p>
-        </li>
-        <li class="infrastructure-item">
-          <h3>Еда</h3>
-          <p class="thin-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-        <li class="infrastructure-item">
-          <h3>Сувениры</h3>
-          <p class="thin-text">Не только китайского, но и местного производства!</p>
+        <li>
+          <ul class="infrastructure-list">
+            <li class="infrastructure-item">
+              <h3>Жилье</h3>
+              <p class="thin-text">Рекомендуем пожить в настоящем отеле, всё как в кино!</p>
+            </li>
+            <li class="infrastructure-item">
+              <h3>Еда</h3>
+              <p class="thin-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="infrastructure-item">
+              <h3>Сувениры</h3>
+              <p class="thin-text">Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
         </li>
       </ul>
     </section>
@@ -89,7 +91,7 @@
       <p class="appointment-info thin-text">
         Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
-      <a href="hotel-form.html" class="activate-form-btn">Поиск гостиницы в Седоне</a>
+      <a href="hotel-form.html" class="button activate-form-btn">Поиск гостиницы в Седоне</a>
       <form class="appointment-form" action="https://echo.htmlacademy.ru" method="POST">
         <p class="appointment-item">
           <label for="appointment-arrival-date">Дата заезда:</label>
@@ -107,7 +109,7 @@
           <label for="number-children">Дети:</label>
           <input id="number-children" type="number" name="children" value="0">
         </p>
-        <button class="button-form" type="submit">Найти</button>
+        <button class="button button-form" type="submit">Найти</button>
       </form>
     </section>
     <section class="map">
@@ -119,9 +121,9 @@
     <b>#VISITSEDONA</b>
     <div class="footer-social">
       <ul>
-        <li><a class="social-button twitter" href="#twitter" aria-label="Седона в Twitter"></a></li>
-        <li><a class="social-button facebook" href="#facebook" aria-label="Седона на Facebook"></a></li>
-        <li><a class="social-button youtube" href="#youtube" aria-label="Седона в Youtube"></a></li>
+        <li><a class="social-button twitter" href="#twitter" aria-label="Седона в Twitter"></a>Твиттер</li>
+        <li><a class="social-button facebook" href="#facebook" aria-label="Седона на Facebook"></a>Фейсбук</li>
+        <li><a class="social-button youtube" href="#youtube" aria-label="Седона в Youtube"></a>Ютуб</li>
       </ul>
     </div>
     <p class="footer-copyright">
