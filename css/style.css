@@ -66,11 +66,6 @@ a {
   line-height: 26px;
 }
 
-.thin-text {
-  color: #333333;
-  font-weight: 400;
-}
-
 .feature-with-photo {
   background-color: #81b3d2;
 }
@@ -87,6 +82,17 @@ a {
 .feature-item h3 {
   font-size: 21px;
   line-height: 21px;
+}
+
+.feature-with-photo h3,
+.feature-with-photo span,
+.feature-with-photo p {
+  color: #ffffff;
+}
+
+.thin-text {
+  color: #333333;
+  font-weight: 400;
 }
 
 .infrastructure-list {
