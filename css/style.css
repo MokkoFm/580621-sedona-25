@@ -50,6 +50,13 @@ a {
   color: #000000;
 }
 
+.main-header-logo {
+  z-index: 10;
+  margin-top: 10px;
+  position: absolute;
+  left: 700px;
+}
+
 .main-photo {
   text-align: center;
 }
