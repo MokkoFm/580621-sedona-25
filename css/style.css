@@ -220,13 +220,32 @@ a {
   align-items: center;
 }
 
-.footer-social ul {
+.foote-social {
   list-style: none;
+}
+
+.social-button {
   display: inline-block;
   width: 40px;
   height: 40px;
+  background-color: #81b3d2;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+.social-button-twitter {
+  background: #81b3d2 url("../img/twitter.svg") no-repeat;
+  background-position: 11px 12px;
+}
+
+.social-button-facebook {
+  background: #81b3d2 url("../img/fb-icon.svg") no-repeat;
+  background-position: 14px 10px;
+}
+
+.social-button-youtube {
+  background: #81b3d2 url("../img/youtube.svg") no-repeat;
+  background-position: 10px 12px;
 }
 
 .main-footer b {
