@@ -19,31 +19,30 @@ a {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
-  text-align: center;
-
   background-color: #ffffff;
-
   display: flex;
   flex-direction: row;
-  width: 1200px;
-  height: 56px;
-  margin: auto;
   justify-content: space-around;
   flex-wrap: nowrap;
   align-items: center;
+  padding: 10px;
+}
 
+.container {
+  margin: 0 auto;
+  width: 1200px;
 }
 
 
 .site-navigation {
   list-style: none;
+  margin-left: 0;
+  padding: 0;
 
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 1200px;
   justify-content: space-around;
-  flex-wrap: nowrap;
-  align-items: center;
 }
 
 .site-navigation a {
@@ -54,23 +53,21 @@ a {
   z-index: 10;
   margin-top: 10px;
   position: absolute;
-  left: 700px;
-}
-
-.main-photo {
-  text-align: center;
+  margin: 0px;
 }
 
 .features-text-main {
   text-align: center;
   font-size: 21px;
   line-height: 26px;
+  margin-top: 60px;
 }
 
 .features-text-p {
   text-align: center;
   font-size: 14px;
   line-height: 26px;
+  margin-top: 40px;
 }
 
 .feature-with-photo {
@@ -79,11 +76,33 @@ a {
 
 .features-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 55px;
 }
 
-.feature-item {
-  text-align: center;
+.feature-with-photo {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 250px;
+  align-items: center;
+  width: 1200px;
+}
+
+.feature-item-no-photo {
+  margin: 0;
+  padding: 0;
   background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  min-height: 250px;
+  align-items: center;
+  width: 400px;
+  order: 4;
 }
 
 .feature-item h3 {
@@ -95,6 +114,7 @@ a {
 .feature-with-photo span,
 .feature-with-photo p {
   color: #ffffff;
+  text-align: center;
 }
 
 .thin-text {
@@ -102,8 +122,24 @@ a {
   font-weight: 400;
 }
 
+.features li:nth-child(1) {
+  order: 1;
+}
+
+.features li:nth-child(6) {
+  order: 2;
+}
+
+.features li:nth-child(2) {
+  order: 3;
+}
+
 .infrastructure-list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .infrastructure-item {
@@ -111,6 +147,7 @@ a {
   background-color: #ffffff;
   font-size: 14px;
   line-height: 21px;
+  order: 2;
 }
 
 .infrastructure-item h3 {
@@ -120,11 +157,24 @@ a {
 
 .search-hotel {
   text-align: center;
+  margin-top: 55px;
 }
 
 .search-hotel b {
   font-size: 30px;
   line-height: 36px;
+}
+
+.appointment-info {
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.appointment-form {
+  background: #ffffff;
+  width: 568px;
+  margin: 0 auto;
+  min-height: 396px;
 }
 
 .button {
@@ -137,15 +187,17 @@ a {
 
 .activate-form-btn {
   width: 568px;
-  height: 86px;
   background-color: #766357;
   color: #ffffff;
   font-size: 21px;
   text-align: center;
   line-height: 26px;
-  padding: 10px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 0 auto;
+  padding-left: 139px;
+  padding-right: 139px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
 }
 
 .activate-form-btn:hover,
@@ -189,6 +241,7 @@ a {
   border: none;
   font-size: 14px;
   line-height: 26px;
+  margin-top: 30px;
 }
 
 .appointment-item input:hover {
@@ -200,8 +253,12 @@ a {
   border: 2px solid #e5e5e5;
 }
 
-.map {
-  text-align: center;
+.map-section {
+  margin: 0 auto;
+  width: 1200px;
+  position: relative;
+  margin-top: -380px;
+  z-index: -10;
 }
 
 .main-footer {
@@ -213,14 +270,15 @@ a {
   display: flex;
   flex-direction: row;
   width: 1200px;
-  height: 120px;
   justify-content: space-around;
   margin: auto;
   flex-wrap: nowrap;
   align-items: center;
+  padding: 35px;
+  margin-top: -125px;
 }
 
-.foote-social {
+.footer-social {
   list-style: none;
 }
 
@@ -245,7 +303,7 @@ a {
 
 .social-button-youtube {
   background: #81b3d2 url("../img/youtube.svg") no-repeat;
-  background-position: 10px 12px;
+  background-position: 10px 11px;
 }
 
 .main-footer b {
@@ -257,7 +315,9 @@ a {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
+  vertical-align: middle;
 }
+
 
 /*
 .footer-copyright .academy-logo:hover,

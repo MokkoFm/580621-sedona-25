@@ -10,17 +10,19 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header container">
     <nav class="main-navigation">
       <a class="main-header-logo" href="#" tabindex="-1">
         <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип штата Седона">
       </a>
-      <ul class="site-navigation">
-        <li class="site-navigation-current"><a href="index.html">Информация</a></li>
-        <li><a href="#media">Фото и видео</a></li>
-        <li><a href="#map">Карта штата</a></li>
-        <li><a href="inner.html">Гостиницы</a></li>
-      </ul>
+      <div class="container">
+        <ul class="site-navigation">
+          <li class="site-navigation-current"><a href="index.html">Информация</a></li>
+          <li><a href="#media">Фото и видео</a></li>
+          <li><a href="#map">Карта штата</a></li>
+          <li><a href="inner.html">Гостиницы</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main class="container">
@@ -36,36 +38,42 @@
         <p class="features-text-p thin-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
       <ul class="features-list">
-        <li class="feature-item">
-          <div class="feature-with-photo">
+        <li class="feature-with-photo">
+          <div class="feature-city">
             <h3>Настоящий городок</h3>
-            <span class="thin-text">№1</span>
+            <span class="number thin-text">№1</span>
             <p class="thin-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <img src="img/sedona-city.jpg" class="feature-photo" width="800" height="256" alt="Фото города Седона">
         </li>
-        <li class="feature-item">
+        <li class="feature-with-photo">
           <img src="img/sedona-bridge.jpg" class="feature-photo" width="800" height="256" alt="Фото моста Дьявола">
-          <div class="feature-with-photo">
+          <div class="feature-bridge">
             <h3>Там есть мост дьявола</h3>
-            <span class="thin-text">№2</span>
+            <span class="number thin-text">№2</span>
             <p class="thin-text">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
           </div>
         </li>
-        <li class="feature-item">
-          <h3>Небольшая площадь</h3>
-          <span class="thin-text">№3</span>
-          <p class="thin-text">Все достопримечательности находятся очень близко</p>
+        <li class="feature-item-no-photo">
+          <div class="square">
+            <h3>Небольшая площадь</h3>
+            <span class="thin-text">№3</span>
+            <p class="thin-text">Все достопримечательности находятся очень близко</p>
+          </div>
         </li>
-        <li class="feature-item">
-          <h3>Красивая дорога</h3>
-          <span class="thin-text">№4</span>
-          <p class="thin-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        <li class="feature-item-no-photo">
+          <div class="road">
+            <h3>Красивая дорога</h3>
+            <span class="thin-text">№4</span>
+            <p class="thin-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
         </li>
-        <li class="feature-item">
-          <h3>Мало туристов</h3>
-          <span class="thin-text">№5</span>
-          <p class="thin-text">Большинство едет в Гранд Каньон и толпится там</p>
+        <li class="feature-item-no-photo">
+          <div class="tourists">
+            <h3>Мало туристов</h3>
+            <span class="thin-text">№5</span>
+            <p class="thin-text">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
         </li>
         <li>
           <ul class="infrastructure-list">
@@ -112,12 +120,12 @@
         <button class="button button-form" type="submit">Найти</button>
       </form>
     </section>
-    <section class="map">
+    <section class="map-section">
       <h4 class="visually-hidden">Карта Седоны</h4>
       <img src="img/map.jpg" class="map" width="1200" height="594" alt="Карта Седоны">
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <b>#VISITSEDONA</b>
     <div class="footer-social">
       <a class="social-button social-button-twitter" href="#twitter" aria-label="Седона в Twitter"></a></li>
@@ -125,7 +133,7 @@
       <a class="social-button social-button-youtube" href="#youtube" aria-label="Седона в Youtube"></a></li>
     </div>
     <p class="footer-copyright">
-      <span>Website by</span>
+      <span class="by">Website by</span>
       <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo-htmlacademy.svg" width="114" height="40" alt="Логотип HTML-академии">
       </a>
