@@ -14,6 +14,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
@@ -37,10 +42,9 @@ a {
   list-style: none;
   margin-left: 0;
   padding: 0;
-
   display: flex;
   flex-direction: row;
-  width: 1200px;
+  width: 100%;
   justify-content: space-around;
 }
 
@@ -68,6 +72,10 @@ a {
   line-height: 26px;
   margin-top: 40px;
   margin-bottom: 55px;
+}
+
+.feature-bridge {
+  width: 400px;
 }
 
 .feature-with-photo {
@@ -154,12 +162,13 @@ a {
   font-size: 14px;
   line-height: 21px;
   order: 3;
+  width: 400px;
 }
 
 .infrastructure-item h3 {
   font-size: 21px;
+  padding-top: 160px;
   line-height: 21px;
-  margin-top: 160px;
 }
 
 .search-hotel {
@@ -275,15 +284,15 @@ a {
   background-color: rgba(249, 251, 246, 0.9);
   background-position: 0 0;
   background-repeat: no-repeat;
-
   display: flex;
   flex-direction: row;
-  width: 1130px;
+  width: 1200px;
   justify-content: space-around;
   margin: auto;
   flex-wrap: nowrap;
   align-items: center;
   padding: 35px;
+  box-sizing: border-box;
   margin-top: -125px;
 }
 
@@ -360,20 +369,18 @@ a {
 
 .filters {
   background: url("../img/background-filter.jpg") #436b8e;
-  min-height: 220px;
+  min-height: 160px;
+  padding: 30px 30px;
 }
 
 .filter fieldset {
   border: none;
-  margin-top: 15px;
-  margin-left: 70px;
 }
 
 .filter legend {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
-  padding: 20px 0px;
 }
 
 .filter-option label {
@@ -382,12 +389,13 @@ a {
   line-height: 21px;
   font-weight: 400;
   display: inline-block;
-  margin-bottom: 20px;
+  padding: 11px 0;
   position: relative;
 }
 
 .filter-option {
   position: relative;
+  margin-left: 15px;
 }
 
 .price-control label {
@@ -486,6 +494,11 @@ a {
   margin-left: 350px;
 }
 
+.sort {
+  background: #ffffff;
+  padding: 1px;
+}
+
 .catalog h3 {
   font-size: 21px;
   line-height: 26px;
@@ -507,12 +520,13 @@ a {
   border: 1px solid #e5e5e5;
   border-left: none;
   border-right: none;
-  margin-left: 33px;
   display: flex;
+  padding-left: 33px;
 }
 
 .catalog-item-price {
   margin-top: 7px;
+  display: flex;
 }
 
 .catalog-item-image {
@@ -531,25 +545,38 @@ a {
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+  width: 120px;
 }
 
 .catalog ul {
   list-style: none;
 }
 
+.catalog {
+  background: #ffffff;
+  padding: 1px;
+}
+
+.catalog-list {
+  padding: 0;
+}
+
 .catalog-item-rate {
   margin-top: 43px;
+  padding-right: 110px;
 }
 
 .hotel-stars {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   min-width: 100px;
   margin-top: 30px;
+  padding-right: 110px;
 }
 
 .hotel-rate {
   margin-left: auto;
+  text-align: right;
 }
 
 .rate {
@@ -567,7 +594,7 @@ a {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-  padding: 7px;
+  padding: 7px 16px;
 }
 
 .button-more:hover {
@@ -585,7 +612,7 @@ a {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-  padding: 7px;
+  padding: 7px 16px;
   margin-left: 6px;
 }
 
@@ -611,6 +638,8 @@ a {
   margin: 0 auto;
   padding: 0;
   background: #fefefe;
+  width: 1200px;
+  margin-top: -15px;
 }
 
 .filter-list {
@@ -627,7 +656,6 @@ a {
   min-height: 20px;
   font-size: 0;
   position: relative;
-  right: 30%;
 }
 
 .star::before {
@@ -642,9 +670,6 @@ a {
 
 .filter-range {
   width: 330px;
-  margin: 50px auto;
-  /* для демо */
-
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -811,28 +836,23 @@ a {
 
 .accomodation-text {
   width: 260px;
-  margin-left: 75px;
+  margin-left: 60px;
   margin-bottom: 90px;
 }
 
 .burger-text {
   width: 290px;
-  margin-left: 135px;
+  margin-left: 60px;
 }
 
 .souvenirs-text {
   width: 280px;
-  margin-left: 120px;
-}
-
-.accomodation-heading {
-  margin-left: 75px;
+  margin-left: 60px;
 }
 
 .accomodation-heading::before {
   content: "";
   position: absolute;
-  left: 18%;
   background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
   width: 80px;
@@ -840,14 +860,10 @@ a {
   margin-top: -100px;
 }
 
-.food-heading {
-  margin-left: 125px;
-}
-
 .food-heading::before {
   content: "";
   position: absolute;
-  left: 48%;
+  left: 47%;
   background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
   width: 80px;
@@ -855,15 +871,10 @@ a {
   margin-top: -100px;
 }
 
-
-.souvenirs-heading {
-  margin-left: 130px;
-}
-
 .souvenirs-heading::before {
   content: "";
   position: absolute;
-  left: 79%;
+  left: 77%;
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
   width: 80px;
@@ -879,7 +890,7 @@ a {
   content: '';
   border: 3px solid #ffffff;
   border-radius: 4px;
-  left: -25px;
+  left: -40px;
 }
 
 input[type="checkbox"]:disabled+label::before {
@@ -896,7 +907,7 @@ input[type="checkbox"]:disabled+label::before {
   border-top-style: none;
   border-right-style: none;
   transform: rotate(-45deg);
-  left: -20px;
+  left: -35px;
 }
 
 input[type="checkbox"]:disabled:checked+label::after {
@@ -906,4 +917,20 @@ input[type="checkbox"]:disabled:checked+label::after {
 .type-sort,
 .rate-sort {
   margin-left: 30px;
+}
+
+.calendar-btn-in,
+.calendar-btn-out {
+  background-image: url("../img/calendar.svg");
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 30px;
+  right: 170px;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.appointment-item {
+  position: relative;
 }
