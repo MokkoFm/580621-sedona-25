@@ -989,6 +989,7 @@ input[type="checkbox"]:disabled:checked+label::after {
   left: 195px;
   top: 16px;
   background: transparent;
+  cursor: pointer;
  }
 
  .btn-minus-children {
@@ -1001,6 +1002,7 @@ input[type="checkbox"]:disabled:checked+label::after {
   right: 77px;
   top: 16px;
   background: transparent;
+  cursor: pointer;
 }
 
 .btn-plus-adults {
@@ -1013,6 +1015,7 @@ input[type="checkbox"]:disabled:checked+label::after {
   left: 247px;
   top: 16px;
   background: transparent;
+  cursor: pointer;
  }
 
  .btn-minus-adults {
@@ -1025,6 +1028,7 @@ input[type="checkbox"]:disabled:checked+label::after {
   right: 76px;
   top: 16px;
   background: transparent;
+  cursor: pointer;
 }
 
 .btn-plus {
