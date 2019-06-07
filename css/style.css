@@ -263,7 +263,6 @@ img {
   border: none;
   font-size: 14px;
   line-height: 26px;
-  margin-top: 30px;
 
   min-height: 40px;
   box-sizing: border-box;
@@ -939,6 +938,7 @@ input[type="checkbox"]:disabled:checked+label::after {
 .appointment-item {
   position: relative;
   padding-left: 55px;
+  padding-top: 30px;
 }
 
 .sort-arrows {
@@ -982,23 +982,23 @@ input[type="checkbox"]:disabled:checked+label::after {
  .btn-plus {
   position: absolute;
   content: "";
-  width: 36px;
-  min-height: 36px;
+  width: 38px;
+  min-height: 38px;
   border: none;
   display: flex;
-  left: 115px;
-  top: 32px;
+  left: 173px;
+  top: 31px;
  }
 
  .btn-minus {
   position: absolute;
   content: "";
-  width: 36px;
-  min-height: 36px;
+  width: 38px;
+  min-height: 38px;
   border: none;
   display: flex;
-  right: 0px;
-  top: 32px;
+  right: 77px;
+  top: 31px;
 }
 
  .date-window {
@@ -1007,4 +1007,20 @@ input[type="checkbox"]:disabled:checked+label::after {
 
  .appointment-item label {
    margin-right: 20px;
+ }
+
+ .appointment-item-arrival-date {
+  margin-top: 55px;
+ }
+
+ .appointment-item-arrival-date label {
+  margin-right: 23px;
+ }
+
+ .appointment-item-adults label {
+   margin-right: 40px;
+ }
+
+ .appointment-item-children label {
+  margin-left: -20px;
  }
