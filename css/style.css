@@ -253,7 +253,7 @@ img {
 }
 
 .button-form:active {
-  background: #94b9d2;
+  color: #94b9d2;
   background-color: #5496bd;
 }
 
@@ -275,7 +275,7 @@ img {
 
 .appointment-item input:focus {
   background-color: #ffffff;
-  border: 2px solid #e5e5e5;
+  outline: 2px solid #e5e5e5;
 }
 
 .map-section {
@@ -349,15 +349,14 @@ img {
   margin-right: 10px;
 }
 
-
-/*
-.footer-copyright .academy-logo:hover,
-.footer-copyright .academy-logo:focus {
-  color: ;
-  background-color: ;
-
+.academy-logo:hover path,
+.academy-logo:focus path {
+  fill: #81b3d2;
 }
-*/
+
+.academy-logo:active path {
+  fill: #bdbbbc;
+}
 
 .visually-hidden {
   position: absolute;
