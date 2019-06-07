@@ -193,6 +193,9 @@ img {
   width: 568px;
   margin: 0 auto;
   min-height: 396px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .button {
@@ -241,6 +244,7 @@ img {
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
+  margin: 55px;
 }
 
 .button-form:hover,
@@ -260,6 +264,9 @@ img {
   font-size: 14px;
   line-height: 26px;
   margin-top: 30px;
+
+  min-height: 40px;
+  box-sizing: border-box;
 }
 
 .appointment-item input:hover {
@@ -922,13 +929,82 @@ input[type="checkbox"]:disabled:checked+label::after {
   background-image: url("../img/calendar.svg");
   position: absolute;
   width: 25px;
-  height: 25px;
-  top: 30px;
-  right: 170px;
+  min-height: 25px;
+  top: 38px;
+  right: 10px;
   border: none;
   background-repeat: no-repeat;
 }
 
 .appointment-item {
   position: relative;
+  padding-left: 55px;
 }
+
+.sort-arrows {
+  position: relative;
+ }
+
+ .sort-arrow-down::after {
+  content: '';
+  position: absolute;
+  left: 1048px;
+  bottom: 0px;
+  border: 6px solid transparent;
+  border-top: 12px solid #cacaca;
+  transform: rotate(180deg);
+ }
+
+
+ .sort-arrow-up::after {
+  content: '';
+  position: absolute;
+  left: 1070px;
+  bottom: -6px;
+  border: 6px solid transparent;
+  border-top: 12px solid #81b3d2;
+ }
+
+ .visitors input {
+   width: 115px;
+   text-align: center;
+ }
+
+ .visitors {
+  display: flex;
+  flex-wrap: nowrap;
+ }
+
+ .btn-minus {
+  margin-left: -20px;
+ }
+
+ .btn-plus {
+  position: absolute;
+  content: "";
+  width: 36px;
+  min-height: 36px;
+  border: none;
+  display: flex;
+  left: 115px;
+  top: 32px;
+ }
+
+ .btn-minus {
+  position: absolute;
+  content: "";
+  width: 36px;
+  min-height: 36px;
+  border: none;
+  display: flex;
+  right: 0px;
+  top: 32px;
+}
+
+ .date-window {
+  width: 330px;
+ }
+
+ .appointment-item label {
+   margin-right: 20px;
+ }
