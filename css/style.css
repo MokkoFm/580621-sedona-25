@@ -232,8 +232,8 @@ img {
 }
 
 .button-form {
-  width: 458px;
-  height: 58px;
+  width: 460px;
+  min-height: 58px;
   background-color: #81b3d2;
   text-transform: uppercase;
   font-size: 21px;
@@ -266,6 +266,7 @@ img {
 
   min-height: 40px;
   box-sizing: border-box;
+  width: 344px;
 }
 
 .appointment-item input:hover {
@@ -303,29 +304,33 @@ img {
 }
 
 .social-button {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
   width: 40px;
-  height: 40px;
+  min-height: 40px;
   background-color: #81b3d2;
   margin-right: 10px;
-  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
 }
 
-.social-button-twitter {
-  background: #81b3d2 url("../img/twitter.svg") no-repeat;
-  background-position: 11px 12px;
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
 }
 
-.social-button-facebook {
-  background: #81b3d2 url("../img/fb-icon.svg") no-repeat;
-  background-position: 14px 10px;
+.social-button:active {
+  background-color: #5496bd;
 }
 
-.social-button-youtube {
-  background: #81b3d2 url("../img/youtube.svg") no-repeat;
-  background-position: 10px 11px;
+.social-button:active path {
+  fill: #88b6d1;
 }
 
+.footer-social {
+  display: flex;
+  align-items: center;
+}
 .main-footer b {
   font-size: 21px;
   line-height: 26px;
@@ -929,7 +934,7 @@ input[type="checkbox"]:disabled:checked+label::after {
   position: absolute;
   width: 25px;
   min-height: 25px;
-  top: 38px;
+  top: 24px;
   right: 10px;
   border: none;
   background-repeat: no-repeat;
@@ -938,7 +943,7 @@ input[type="checkbox"]:disabled:checked+label::after {
 .appointment-item {
   position: relative;
   padding-left: 55px;
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 .sort-arrows {
@@ -975,22 +980,19 @@ input[type="checkbox"]:disabled:checked+label::after {
   flex-wrap: nowrap;
  }
 
- .btn-minus {
-  margin-left: -20px;
- }
-
- .btn-plus {
+ .btn-plus-children {
   position: absolute;
   content: "";
   width: 38px;
   min-height: 38px;
   border: none;
   display: flex;
-  left: 173px;
-  top: 31px;
+  left: 195px;
+  top: 16px;
+  background: transparent;
  }
 
- .btn-minus {
+ .btn-minus-children {
   position: absolute;
   content: "";
   width: 38px;
@@ -998,7 +1000,44 @@ input[type="checkbox"]:disabled:checked+label::after {
   border: none;
   display: flex;
   right: 77px;
-  top: 31px;
+  top: 16px;
+  background: transparent;
+}
+
+.btn-plus-adults {
+  position: absolute;
+  content: "";
+  width: 38px;
+  min-height: 38px;
+  border: none;
+  display: flex;
+  left: 247px;
+  top: 16px;
+  background: transparent;
+ }
+
+ .btn-minus-adults {
+  position: absolute;
+  content: "";
+  width: 38px;
+  min-height: 38px;
+  border: none;
+  display: flex;
+  right: 76px;
+  top: 16px;
+  background: transparent;
+}
+
+.btn-plus {
+  background-image: url("../img/plus.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.btn-minus {
+  background-image: url("../img/minus.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
  .date-window {
@@ -1019,8 +1058,4 @@ input[type="checkbox"]:disabled:checked+label::after {
 
  .appointment-item-adults label {
    margin-right: 40px;
- }
-
- .appointment-item-children label {
-  margin-left: -20px;
  }
