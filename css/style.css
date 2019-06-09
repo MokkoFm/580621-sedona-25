@@ -30,6 +30,7 @@ img {
   justify-content: space-around;
   flex-wrap: nowrap;
   align-items: center;
+  position: relative;
 }
 
 .container {
@@ -54,8 +55,13 @@ img {
 
 .main-header-logo {
   z-index: 10;
-  margin-top: 10px;
+  top: 0;
   position: absolute;
+  left: 530px;
+}
+
+.features {
+  margin-top: -218px;
 }
 
 .features-text-main {
@@ -64,6 +70,12 @@ img {
   line-height: 26px;
   margin: 60px auto 40px auto;
   width: 445px;
+}
+
+.features-text {
+  background-color: #ffffff;
+  display: inline-block;
+  width: 1200px;
 }
 
 .features-text-p {
@@ -163,17 +175,18 @@ img {
   line-height: 21px;
   order: 3;
   width: 400px;
+  padding: 160px 0 0 0;
+  position: relative;
 }
 
 .infrastructure-item h3 {
   font-size: 21px;
-  padding-top: 160px;
   line-height: 21px;
 }
 
 .search-hotel {
   text-align: center;
-  margin-top: 55px;
+  padding-top: 55px;
 }
 
 .search-hotel b {
@@ -307,7 +320,7 @@ img {
   display: flex;
   flex-direction: row;
   width: 40px;
-  min-height: 40px;
+  height: 40px;
   background-color: #81b3d2;
   margin-right: 10px;
   align-items: center;
@@ -734,6 +747,7 @@ img {
 .price-controls input {
   width: 50px;
   margin: 0;
+  height: 30px;
 
   color: inherit;
   font: inherit;
@@ -861,33 +875,34 @@ img {
 .accomodation-heading::before {
   content: "";
   position: absolute;
-  background-image: url("../img/icon-1.svg");
+  background-image: url(../img/icon-1.svg);
   background-repeat: no-repeat;
   width: 80px;
   min-height: 80px;
-  margin-top: -100px;
+  top: 80px;
+  left: 163px;
 }
 
 .food-heading::before {
   content: "";
   position: absolute;
-  left: 47%;
-  background-image: url("../img/icon-3.svg");
+  left: 163px;
+  background-image: url(../img/icon-3.svg);
   background-repeat: no-repeat;
   width: 80px;
   min-height: 80px;
-  margin-top: -100px;
+  top: 84px;
 }
 
 .souvenirs-heading::before {
   content: "";
   position: absolute;
-  left: 77%;
-  background-image: url("../img/icon-2.svg");
+  left: 163px;
+  background-image: url(../img/icon-2.svg);
   background-repeat: no-repeat;
   width: 80px;
   min-height: 80px;
-  margin-top: -100px;
+  top: 79px;
 }
 
 .filter-option label::before {
@@ -952,7 +967,7 @@ input[type="checkbox"]:disabled:checked+label::after {
  .sort-arrow-down::after {
   content: '';
   position: absolute;
-  left: 1048px;
+  right: 140px;
   bottom: 0px;
   border: 6px solid transparent;
   border-top: 12px solid #cacaca;
@@ -963,7 +978,7 @@ input[type="checkbox"]:disabled:checked+label::after {
  .sort-arrow-up::after {
   content: '';
   position: absolute;
-  left: 1070px;
+  right: 115px;
   bottom: -6px;
   border: 6px solid transparent;
   border-top: 12px solid #81b3d2;
@@ -1061,4 +1076,13 @@ input[type="checkbox"]:disabled:checked+label::after {
 
  .appointment-item-adults label {
    margin-right: 40px;
+ }
+ 
+ .main-photo-section {
+  margin-top: -50px;
+ }
+
+ .main-photo-polygon {
+  position: absolute;
+  top: 400px;
  }
