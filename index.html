@@ -29,8 +29,8 @@
       <h4 class="visually-hidden">Фотография Седоны</h4>
       <img src="img/main-photo.jpg" width="1200" height="800" class="main-photo" alt="Фотография Седоны">
       <div class="main-photo-polygon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="275" viewBox="0 0 1200 57">
-        <path d="M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z" fill="#fff" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="275" viewBox="0 0 1200 57">
+          <path d="M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z" fill="#fff" /></svg>
       </div>
     </section>
     <section class="features">
@@ -102,33 +102,35 @@
         Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
       <a href="hotel-form.html" class="button activate-form-btn">Поиск гостиницы в Седоне</a>
-      <form class="appointment-form" action="https://echo.htmlacademy.ru" method="POST">
-        <p class="appointment-item appointment-item-arrival-date">
-          <label for="appointment-arrival-date">Дата заезда:</label>
-          <input class="date-window" id="appointment-arrival-date" type="date" name="arrival-date" value="">
-          <button class="calendar-btn-in" type="button"></button>
-        </p>
-        <p class="appointment-item">
-          <label for="appointment-departure-date">Дата выезда:</label>
-          <input class="date-window" id="appointment-departure-date" type="date" name="departure-date" value="">
-          <button class="calendar-btn-out" type="button"></button>
-        </p>
-        <div class="visitors">
-          <p class="appointment-item appointment-item-adults">
-            <button class="btn-plus btn-plus-adults" type="button"></button>
-            <label for="number-adults">Взрослые:</label>
-            <input class="adult-numbers" id="number-adults" type="text" name="adults" placeholder="0">
-            <button class="btn-minus btn-minus-adults" type="button"></button>
+      <div class="search-form">
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="appointment-item appointment-item-arrival-date">
+            <label for="appointment-arrival-date">Дата заезда:</label>
+            <input class="date-window" id="appointment-arrival-date" type="date" name="arrival-date" value="">
+            <button class="calendar-btn-in" type="button"></button>
           </p>
-          <p class="appointment-item appointment-item-children">
-            <label for="number-children">Дети:</label>
-            <button class="btn-plus btn-plus-children" type="button"></button>
-            <input class="children-numbers" id="number-children" type="text" name="children" placeholder="0">
-            <button class="btn-minus btn-minus-children" type="button"></button>
+          <p class="appointment-item">
+            <label for="appointment-departure-date">Дата выезда:</label>
+            <input class="date-window" id="appointment-departure-date" type="date" name="departure-date" value="">
+            <button class="calendar-btn-out" type="button"></button>
           </p>
-        </div>
-        <button class="button button-form" type="submit">Найти</button>
-      </form>
+          <div class="visitors">
+            <p class="appointment-item appointment-item-adults">
+              <button class="btn-plus btn-plus-adults" type="button"></button>
+              <label for="number-adults">Взрослые:</label>
+              <input class="adult-numbers" id="number-adults" type="text" name="adults" placeholder="0">
+              <button class="btn-minus btn-minus-adults" type="button"></button>
+            </p>
+            <p class="appointment-item appointment-item-children">
+              <label for="number-children">Дети:</label>
+              <button class="btn-plus btn-plus-children" type="button"></button>
+              <input class="children-numbers" id="number-children" type="text" name="children" placeholder="0">
+              <button class="btn-minus btn-minus-children" type="button"></button>
+            </p>
+          </div>
+          <button class="button button-form" type="submit">Найти</button>
+        </form>
+      </div>
     </section>
     <section class="map-section">
       <h4 class="visually-hidden">Карта Седоны</h4>
