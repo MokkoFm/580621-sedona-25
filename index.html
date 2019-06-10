@@ -106,25 +106,25 @@
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="POST">
           <p class="appointment-item appointment-item-arrival-date">
             <label for="appointment-arrival-date">Дата заезда:</label>
-            <input class="date-window" id="appointment-arrival-date" type="date" name="arrival-date" value="">
+            <input class="date-window" id="appointment-arrival-date" type="date" name="arrival-date" value="" required>
             <button class="calendar-btn-in" type="button"></button>
           </p>
           <p class="appointment-item">
             <label for="appointment-departure-date">Дата выезда:</label>
-            <input class="date-window" id="appointment-departure-date" type="date" name="departure-date" value="">
+            <input class="date-window" id="appointment-departure-date" type="date" name="departure-date" value="" required>
             <button class="calendar-btn-out" type="button"></button>
           </p>
           <div class="visitors">
             <p class="appointment-item appointment-item-adults">
               <button class="btn-plus btn-plus-adults" type="button"></button>
               <label for="number-adults">Взрослые:</label>
-              <input class="adult-numbers" id="number-adults" type="text" name="adults" placeholder="0">
+              <input class="adult-numbers" id="number-adults" type="text" name="adults" placeholder="0" required>
               <button class="btn-minus btn-minus-adults" type="button"></button>
             </p>
             <p class="appointment-item appointment-item-children">
               <label for="number-children">Дети:</label>
               <button class="btn-plus btn-plus-children" type="button"></button>
-              <input class="children-numbers" id="number-children" type="text" name="children" placeholder="0">
+              <input class="children-numbers" id="number-children" type="text" name="children" placeholder="0" required>
               <button class="btn-minus btn-minus-children" type="button"></button>
             </p>
           </div>
