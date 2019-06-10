@@ -36,6 +36,7 @@ img {
 .container {
   margin: 0 auto;
   width: 1200px;
+  box-shadow: 80px 0px 0px 0px #f2f2f2, -80px 0px 0px #f2f2f2;
 }
 
 
@@ -62,6 +63,7 @@ img {
 
 .features {
   margin-top: -218px;
+  box-shadow: 80px 0px 0px 0px #f2f2f2, -80px 0px 0px #f2f2f2;
 }
 
 .features-text-main {
@@ -296,6 +298,7 @@ img {
   position: relative;
   margin-top: -398px;
   z-index: -10;
+  box-shadow: 80px 0px 0px 0px #f2f2f2, -80px 0px 0px #f2f2f2;
 }
 
 .main-footer {
@@ -313,6 +316,7 @@ img {
   padding: 35px;
   box-sizing: border-box;
   margin-top: -125px;
+  box-shadow: 80px 0px 0px 0px #f2f2f2, -80px 0px 0px #f2f2f2;
 }
 
 .social-button {
@@ -1085,6 +1089,7 @@ input[type="checkbox"]:disabled:checked+label::after {
  
  .main-photo-section {
   margin-top: -50px;
+  box-shadow: 80px 0px 0px 0px #f2f2f2, -80px 0px 0px #f2f2f2;
  }
 
  .main-photo-polygon {
