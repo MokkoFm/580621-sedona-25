@@ -101,7 +101,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  margin-top: 55px;
 }
 
 .feature-with-photo {
@@ -175,7 +174,7 @@ img {
   line-height: 21px;
   order: 3;
   width: 400px;
-  padding: 160px 0 0 0;
+  padding: 130px 0 0 0;
   position: relative;
 }
 
@@ -229,8 +228,8 @@ img {
   margin: 0 auto;
   padding-left: 139px;
   padding-right: 139px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 
 }
 
@@ -295,7 +294,7 @@ img {
   margin: 0 auto;
   width: 1200px;
   position: relative;
-  margin-top: -380px;
+  margin-top: -398px;
   z-index: -10;
 }
 
@@ -879,7 +878,7 @@ img {
   background-repeat: no-repeat;
   width: 80px;
   min-height: 80px;
-  top: 80px;
+  top: 55px;
   left: 163px;
 }
 
@@ -891,7 +890,7 @@ img {
   background-repeat: no-repeat;
   width: 80px;
   min-height: 80px;
-  top: 84px;
+  top: 59px;
 }
 
 .souvenirs-heading::before {
@@ -902,7 +901,7 @@ img {
   background-repeat: no-repeat;
   width: 80px;
   min-height: 80px;
-  top: 79px;
+  top: 54px;
 }
 
 .filter-option label::before {
@@ -948,7 +947,7 @@ input[type="checkbox"]:disabled:checked+label::after {
   position: absolute;
   width: 25px;
   min-height: 25px;
-  top: 24px;
+  top: 8px;
   right: 10px;
   border: none;
   background-repeat: no-repeat;
@@ -957,7 +956,10 @@ input[type="checkbox"]:disabled:checked+label::after {
 .appointment-item {
   position: relative;
   padding-left: 55px;
-  padding-top: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0 auto;
+  margin-left: 0;
 }
 
 .sort-arrows {
@@ -992,6 +994,8 @@ input[type="checkbox"]:disabled:checked+label::after {
  .visitors {
   display: flex;
   flex-wrap: nowrap;
+  margin: 0;
+  margin-top: 30px;
  }
 
  .btn-plus-children {
@@ -1002,7 +1006,7 @@ input[type="checkbox"]:disabled:checked+label::after {
   border: none;
   display: flex;
   left: 195px;
-  top: 16px;
+  top: 0;
   background: transparent;
   cursor: pointer;
  }
@@ -1015,7 +1019,7 @@ input[type="checkbox"]:disabled:checked+label::after {
   border: none;
   display: flex;
   right: 77px;
-  top: 16px;
+  top: 0;
   background: transparent;
   cursor: pointer;
 }
@@ -1028,7 +1032,7 @@ input[type="checkbox"]:disabled:checked+label::after {
   border: none;
   display: flex;
   left: 247px;
-  top: 16px;
+  top: 0;
   background: transparent;
   cursor: pointer;
  }
@@ -1041,7 +1045,7 @@ input[type="checkbox"]:disabled:checked+label::after {
   border: none;
   display: flex;
   right: 76px;
-  top: 16px;
+  top: 0;
   background: transparent;
   cursor: pointer;
 }
@@ -1067,7 +1071,8 @@ input[type="checkbox"]:disabled:checked+label::after {
  }
 
  .appointment-item-arrival-date {
-  margin-top: 55px;
+  margin-top: 85px;
+  margin-bottom: 30px;
  }
 
  .appointment-item-arrival-date label {
