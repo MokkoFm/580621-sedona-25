@@ -1047,7 +1047,7 @@ input[type="checkbox"]:disabled:checked+label::after {
 
 .calendar-btn-in,
 .calendar-btn-out {
-  background-image: url("../img/calendar.svg");
+  background-image: url("../img/calendar.png");
   position: absolute;
   width: 25px;
   min-height: 25px;
@@ -1055,6 +1055,23 @@ input[type="checkbox"]:disabled:checked+label::after {
   right: 10px;
   border: none;
   background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.calendar-btn-in:hover,
+.calendar-btn-out:hover {
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+} 
+
+.calendar-btn-in:active,
+.calendar-btn-out:active {
+  background-image: url("../img/calendar-active.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
 }
 
 .appointment-item {
@@ -1089,7 +1106,17 @@ input[type="checkbox"]:disabled:checked+label::after {
   right: 115px;
   bottom: -6px;
   border: 6px solid transparent;
-  border-top: 12px solid #81b3d2;
+  border-top: 12px solid #cacaca;
+ }
+
+ .sort-arrow-down:hover:after,
+ .sort-arrow-up:hover:after {
+  border-top: 12px solid #000000;
+ }
+
+ .sort-arrow-down:active:after,
+ .sort-arrow-up:active:after {
+   border-top: 12px solid #81b3d2;
  }
 
  .visitors input {
@@ -1135,6 +1162,22 @@ input[type="checkbox"]:disabled:checked+label::after {
   top: 0;
   background: transparent;
   cursor: pointer;
+}
+
+.btn-minus:hover {
+  background-image: url("../img/minus-hover.png")
+}
+
+.btn-plus:hover {
+  background-image: url("../img/plus-hover.png")
+}
+
+.btn-minus:active {
+  background-image: url("../img/minus-active.png")
+}
+
+.btn-plus:active {
+  background-image: url("../img/plus-active.png")
 }
 
 .btn-plus-adults {
@@ -1212,15 +1255,21 @@ input[type="checkbox"]:disabled:checked+label::after {
  }
 
  @-webkit-keyframes wow {
-   0% {-webkit-transform: translate(-2000px, 0px);transform: translate(-2000px, 0px);}
-   70% {-webkit-transform: translate(30px, 0px);transform: translate(30px, 0px);}
-   100% {-webkit-transform: translate(0px, 0px);transform: translate(0px, 0px);}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
  }
 
  @keyframes wow {
-   0% {-webkit-transform: translate(-2000px, 0px);transform: translate(-2000px, 0px);}
-   70% {-webkit-transform: translate(30px, 0px);transform: translate(30px, 0px);}
-   100% {-webkit-transform: translate(0px, 0px);transform: translate(0px, 0px);}
+  0% {
+    transform: translateX(-2000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
  }
 
  .no-form {
@@ -1234,6 +1283,5 @@ input[type="checkbox"]:disabled:checked+label::after {
   position: absolute;
   left: 0;
   margin-top: 35px;
-  -webkit-box-shadow: 80px 0px 0px 0px #f2f2f2, -80px 0px 0px #f2f2f2;
-          box-shadow: 80px 0px 0px 0px #f2f2f2, -80px 0px 0px #f2f2f2;
+  animation: wow 0.6s;
  }
