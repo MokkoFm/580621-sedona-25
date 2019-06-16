@@ -29,46 +29,46 @@
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
         <div class="fieldsets">
-        <fieldset>
-          <legend>Инфраструктура:</legend>
-          <ul>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" name="swimming"
-                id="filter-swimming" checked>
-              <label for="filter-swimming">Бассейн</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" id="filter-parking"
-                name="parking">
-              <label for="filter-parking">Парковка</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" id="filter-wi-fi"
-                name="wi-fi">
-              <label for="filter-wi-fi">Wi-fi</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Тип жилья:</legend>
-          <ul>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" name="hotel"
-                id="filter-hotel" checked>
-              <label for="filter-hotel">Гостиница</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" name="motel"
-                id="filter-motel" checked>
-              <label for="filter-motel">Мотель</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" name="apartment"
-                id="filter-apartment" checked>
-              <label for="filter-apartment">Апартаменты</label>
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" name="swimming"
+                  id="filter-swimming" checked>
+                <label for="filter-swimming">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" id="filter-parking"
+                  name="parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" id="filter-wi-fi"
+                  name="wi-fi">
+                <label for="filter-wi-fi">Wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" name="hotel"
+                  id="filter-hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" name="motel"
+                  id="filter-motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input checkbox" type="checkbox" name="apartment"
+                  id="filter-apartment" checked>
+                <label for="filter-apartment">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
         </div>
         <div class="filter-range">
           <div class="filter-range-title">Стоимость в сутки (р):</div>
@@ -103,8 +103,8 @@
         </li>
       </ul>
       <div class="sort-arrows">
-        <a class="sort-arrow-up" href="#"></a>
-        <a class="sort-arrow-down" href="#"></a>
+        <a class="sort-arrow-up" href="#" aria-label="Сортировка по убыванию"></a>
+        <a class="sort-arrow-down" href="#" aria-label="Сортировка по возрастанию"></a>
       </div>
     </section>
     <section class="catalog">
@@ -130,6 +130,7 @@
             </p>
           </div>
           <div class="hotel-rate">
+            <p class="visually-hidden">Рейтинг отеля 4 здвезды</p>
             <ul class="hotel-stars">
               <li class="star"></li>
               <li class="star"></li>
@@ -161,6 +162,7 @@
             </p>
           </div>
           <div class="hotel-rate">
+            <p class="visually-hidden">Рейтинг отеля 3 здвезды</p>
             <ul class="hotel-stars">
               <li class="star"></li>
               <li class="star"></li>
@@ -191,6 +193,7 @@
             </p>
           </div>
           <div class="hotel-rate">
+            <p class="visually-hidden">Рейтинг отеля 2 здвезды</p>
             <ul class="hotel-stars">
               <li class="star"></li>
               <li class="star"></li>
