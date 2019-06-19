@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -28,10 +28,6 @@
     <section class="main-photo-section">
       <h4 class="visually-hidden">Фотография Седоны</h4>
       <img src="img/main-photo.jpg" width="1200" height="800" class="main-photo" alt="Фотография Седоны">
-      <div class="main-photo-polygon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="275" viewBox="0 0 1200 57">
-          <path d="M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z" fill="#fff" /></svg>
-      </div>
     </section>
     <section class="features">
       <div class="features-text">
@@ -106,25 +102,25 @@
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="POST">
           <p class="appointment-item appointment-item-arrival-date">
             <label for="appointment-arrival-date">Дата заезда:</label>
-            <input class="date-window" id="appointment-arrival-date" type="date" name="arrival" value="">
+            <input class="date-window" id="appointment-arrival-date" type="text" name="arrival" value="">
             <button class="calendar-btn-in" type="button"></button>
           </p>
           <p class="appointment-item">
             <label for="appointment-departure-date">Дата выезда:</label>
-            <input class="date-window" id="appointment-departure-date" type="date" name="departure" value="">
+            <input class="date-window" id="appointment-departure-date" type="text" name="departure" value="">
             <button class="calendar-btn-out" type="button"></button>
           </p>
           <div class="visitors">
             <p class="appointment-item appointment-item-adults">
               <button class="btn-plus btn-plus-adults" type="button"></button>
               <label for="number-adults">Взрослые:</label>
-              <input class="adult-numbers" id="number-adults" type="text" name="adults" placeholder="0">
+              <input class="counter adult-numbers" id="number-adults" type="text" name="adults" placeholder="0">
               <button class="btn-minus btn-minus-adults" type="button"></button>
             </p>
             <p class="appointment-item appointment-item-children">
               <label for="number-children">Дети:</label>
               <button class="btn-plus btn-plus-children" type="button"></button>
-              <input class="children-numbers" id="number-children" type="text" name="children" placeholder="0">
+              <input class="counter children-numbers" id="number-children" type="text" name="children" placeholder="0">
               <button class="btn-minus btn-minus-children" type="button"></button>
             </p>
           </div>
@@ -172,7 +168,7 @@
       </a>
     </p>
   </footer>
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
