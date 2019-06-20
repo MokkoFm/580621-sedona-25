@@ -183,8 +183,7 @@ img {
 .square,
 .road,
 .tourists {
-  margin-left: 5px;
-  margin-top: -15px;
+  margin-top: -25px;
 }
 
 .feature-with-photo h3,
@@ -198,6 +197,7 @@ img {
   width: 151px;
   margin: 0 auto;
   margin-bottom: 25px;
+  margin-top: -10px;
 }
 
 .thin-text {
@@ -252,11 +252,12 @@ img {
 .infrastructure-item h3 {
   font-size: 21px;
   line-height: 21px;
+  padding-top: 5px;
 }
 
 .search-hotel {
   text-align: center;
-  padding-top: 55px;
+  padding-top: 52px;
   padding-bottom: 30px;
   background-color: #ffffff;
 }
@@ -402,12 +403,14 @@ img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-top: -125px;
+  padding-bottom: 15px;
+  padding-top: 30px;
 }
 
 .main-footer .footer-social {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   margin-right: 20px;
-  margin-left: 90px;
+  margin-left: 115px;
 }
 
 .social-button {
@@ -418,10 +421,10 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   background-color: #81b3d2;
-  margin-right: 10px;
+  margin-right: 5px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -455,8 +458,8 @@ img {
 .main-footer b {
   font-size: 21px;
   line-height: 26px;
-  margin-left: 30px;
-  margin-bottom: 20px;
+  margin-left: 35px;
+  margin-bottom: 25px;
 }
 
 .footer-copyright {
@@ -466,7 +469,8 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 60px;
+  margin-top: 10px;
 }
 
 .footer-copyright span {
@@ -831,7 +835,7 @@ img {
   padding: 0;
   background: #fefefe;
   width: 1200px;
-  margin-top: -15px;
+  margin-top: -12px;
 }
 
 .filter-list {
@@ -1447,4 +1451,16 @@ input[type="checkbox"]:disabled:checked+label::after {
   left: 75px;
   background-image: url(../img/polygon.svg);
   top: 510px;
+}
+
+.main-footer-inner b {
+  margin-left: 60px;
+}
+
+.main-footer-inner .footer-social {
+  margin-right: 30px;
+}
+
+.main-footer-inner .footer-copyright {
+  margin-right: 25px;
 }
