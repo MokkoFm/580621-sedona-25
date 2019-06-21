@@ -233,7 +233,8 @@ img {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .infrastructure-item {

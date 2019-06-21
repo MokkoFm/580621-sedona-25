@@ -13,10 +13,10 @@ link.addEventListener("click", function (evt) {
 
 form.addEventListener("submit", function (evt) {
   if (!arrivalDate.value || !departureDate.value || !adult.value || !child.value) {
-  evt.preventDefault();
-  showForm.classList.remove("modal-error");
-  showForm.offsetWidth = showForm.offsetWidth;
-  showForm.classList.add("modal-error");
-  console.log("Пожалуйста, заполните все поля формы");
+    evt.preventDefault();
+    showForm.classList.remove("modal-error");
+    showForm.offsetWidth = showForm.offsetWidth;
+    showForm.classList.add("modal-error");
+    console.log("Пожалуйста, заполните все поля формы");
   }
 });
