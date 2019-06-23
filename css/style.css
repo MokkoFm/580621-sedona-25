@@ -228,13 +228,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .infrastructure-item {
@@ -1045,18 +1043,20 @@ img {
 
 .accomodation-text {
   width: 260px;
-  margin-bottom: 90px;
+  padding-bottom: 75px;
   margin-left: 75px;
 }
 
 .burger-text {
   width: 290px;
   margin-left: 60px;
+  padding-bottom: 75px;
 }
 
 .souvenirs-text {
   width: 280px;
   margin-left: 60px;
+  padding-bottom: 75px;
 }
 
 .accomodation-heading::before {
