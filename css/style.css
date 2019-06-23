@@ -90,7 +90,7 @@ img {
   text-align: center;
   font-size: 21px;
   line-height: 26px;
-  margin: 60px auto -15px auto;
+  margin: 63px auto -15px auto;
   width: 445px;
 }
 
@@ -254,6 +254,7 @@ img {
   font-size: 21px;
   line-height: 21px;
   padding-top: 5px;
+  margin-bottom: 25px;
 }
 
 .search-hotel {
@@ -269,10 +270,10 @@ img {
 }
 
 .appointment-info {
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 80px;
   width: 445px;
-  margin-left: 375px;
+  margin-left: 380px;
 }
 
 .appointment-form {
@@ -357,6 +358,7 @@ img {
   line-height: 26px;
   padding-top: 7px;
   padding-bottom: 7px;
+  padding-left: 10px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 344px;
@@ -1003,6 +1005,7 @@ img {
   width: 290px;
   margin-right: 55px;
   margin-left: 55px;
+  margin-top: 20px;
 }
 
 .feature-city {
@@ -1135,7 +1138,7 @@ input[type="checkbox"]:disabled:checked+label::after {
   width: 25px;
   min-height: 25px;
   top: 8px;
-  right: 10px;
+  right: 5px;
   border: none;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -1205,8 +1208,9 @@ input[type="checkbox"]:disabled:checked+label::after {
 .visitors input {
   width: 38px;
   text-align: center;
-  min-height: 38px;
+  min-height: 40px;
   margin-left: 38px;
+  padding: 0;
 }
 
 .visitors {
@@ -1328,7 +1332,7 @@ input[type="checkbox"]:disabled:checked+label::after {
 }
 
 .appointment-item-arrival-date {
-  margin-top: 50px;
+  margin-top: 55px;
   margin-bottom: 25px;
 }
 
@@ -1457,7 +1461,7 @@ input[type="checkbox"]:disabled:checked+label::after {
   width: 1200px;
   height: 59px;
   background-image: url(../img/polygon.svg);
-  top: 453px;
+  top: 454px;
   left: 0;
 }
 
