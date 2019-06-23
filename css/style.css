@@ -1015,18 +1015,18 @@ img {
 .feature-text-bridge {
   width: 305px;
   margin-right: 55px;
-  margin-left: 55px;
+  margin-left: 50px;
 }
 
 .feature-text-places {
   width: 220px;
-  margin-left: 95px;
+  margin-left: 90px;
   margin-top: 20px;
 }
 
 .feature-text-road {
   width: 265px;
-  margin-left: 60px;
+  margin-left: 70px;
   margin-top: 20px;
 }
 
@@ -1467,12 +1467,15 @@ input[type="checkbox"]:disabled:checked+label::after {
 
 .main-footer-inner b {
   margin-left: 60px;
+  margin-top: 5px;
 }
 
 .main-footer-inner .footer-social {
   margin-right: 30px;
+  margin-top: 5px;
 }
 
 .main-footer-inner .footer-copyright {
   margin-right: 25px;
+  margin-top: 15px;
 }
