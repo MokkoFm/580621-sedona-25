@@ -762,7 +762,7 @@ img {
   justify-content: flex-end;
   min-width: 100px;
   margin-top: 30px;
-  padding-right: 105px;
+  padding-right: 100px;
 }
 
 .hotel-rate {
@@ -859,6 +859,7 @@ img {
   font-size: 0;
   position: relative;
   vertical-align: center;
+  margin-right: 2px;
 }
 
 .star::before {
