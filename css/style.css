@@ -1340,10 +1340,6 @@ input[type="checkbox"]:disabled:checked+label::after {
   margin-right: 40px;
 }
 
-.main-photo-section {
-  margin-top: -50px;
-}
-
 .main-photo-polygon {
   position: absolute;
   top: 400px;
@@ -1444,14 +1440,25 @@ input[type="checkbox"]:disabled:checked+label::after {
   animation: shake 0.6s;
 }
 
-.main-photo-section::after {
+.wrapper {
+  position: relative;
+  height: 434px;
+  margin-bottom: 215px;
+  background-color: #dbe9f2;
+  background-image: url(../img/background.jpg);
+  background-position: 0 -55px;
+  padding-top: 76px;
+  text-align: center;
+}
+
+.wrapper::after {
   content: " ";
   position: absolute;
   width: 1200px;
   height: 59px;
-  left: 75px;
   background-image: url(../img/polygon.svg);
-  top: 510px;
+  top: 453px;
+  left: 0;
 }
 
 .main-footer-inner b {
