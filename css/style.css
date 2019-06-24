@@ -360,6 +360,7 @@ img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 344px;
+  min-height: 38px;
 }
 
 .appointment-item input:hover {
@@ -836,7 +837,8 @@ img {
   padding: 0;
   background: #fefefe;
   width: 1200px;
-  margin-top: -12px;
+  margin-top: -15px;
+  padding-top: 20px;
 }
 
 .filter-list {
@@ -1468,15 +1470,23 @@ input[type="checkbox"]:disabled:checked+label::after {
 
 .main-footer-inner b {
   margin-left: 60px;
-  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
 .main-footer-inner .footer-social {
   margin-right: 30px;
-  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
 .main-footer-inner .footer-copyright {
   margin-right: 25px;
-  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.checkbox:focus + label::before {
+  outline: 1px solid#81b3d2;
+}
+
+.checkbox:focus + label {
+  outline: 1px solid #81b3d2;
 }
