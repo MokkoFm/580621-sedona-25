@@ -378,6 +378,7 @@ img {
   position: relative;
   margin-top: 0;
   z-index: -10;
+  background-color: #f2f1ef;
 }
 
 .main-footer {
@@ -1489,4 +1490,19 @@ input[type="checkbox"]:disabled:checked+label::after {
 
 .checkbox:focus + label {
   outline: 1px solid #81b3d2;
+}
+
+.map-section iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+}
+
+.map-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 594px;
+  margin: 0;
 }
