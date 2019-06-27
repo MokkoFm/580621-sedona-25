@@ -228,6 +228,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
@@ -1475,7 +1477,7 @@ input[type="checkbox"]:disabled:checked+label::after {
 
 .main-footer-inner b {
   margin-left: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .main-footer-inner .footer-social {
@@ -1485,14 +1487,14 @@ input[type="checkbox"]:disabled:checked+label::after {
 
 .main-footer-inner .footer-copyright {
   margin-right: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
-.checkbox:focus + label::before {
+.checkbox:focus+label::before {
   outline: 1px solid#81b3d2;
 }
 
-.checkbox:focus + label {
+.checkbox:focus+label {
   outline: 1px solid #81b3d2;
 }
 
@@ -1500,4 +1502,9 @@ input[type="checkbox"]:disabled:checked+label::after {
   position: relative;
   z-index: 2;
   border: none;
+}
+
+.appointment-item-adults,
+.appointment-item-children {
+  margin-top: 5px;
 }
