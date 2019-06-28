@@ -1491,11 +1491,7 @@ input[type="checkbox"]:disabled:checked+label::after {
 }
 
 .checkbox:focus+label::before {
-  outline: 1px solid#81b3d2;
-}
-
-.checkbox:focus+label {
-  outline: 1px solid #81b3d2;
+  outline: 1px solid#000000;
 }
 
 .map-section iframe {
